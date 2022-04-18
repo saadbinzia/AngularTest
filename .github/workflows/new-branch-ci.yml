@@ -1,0 +1,13 @@
+on: pull_request
+
+jobs:
+  branch-naming-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: deepakputhraya/action-branch-name@master
+        with:
+          regex: '([a-z])+\/([a-z])+' 
+          allowed_prefixes: 'feature,bug,task,fix'
+          ignore: main,dev
+          min_length: 5 
+          max_length: 20
