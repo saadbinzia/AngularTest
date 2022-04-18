@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing-app';
+  z = 100;
+
+ addToZ(x: any, y: any) {
+  return x + y + this.z;
+}
+
 }
