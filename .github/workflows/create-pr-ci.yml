@@ -17,4 +17,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "feature, automated pr"
           pr_title: "pull request"
-          pr_body: ":crown: *An automated PR*"              # Full markdown support, requires pr_title to be set
+          pr_body: ":crown: *An automated PR*"              
