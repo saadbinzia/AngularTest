@@ -11,6 +11,3 @@ jobs:
         with:
           commit-message: done
           delete-branch: true
-          branch: dev
-          labels: |
-            automated pr

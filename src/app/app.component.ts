@@ -11,7 +11,10 @@ export class AppComponent {
   z1 = 100;
   z2 = 100;
   z3 = 100;
+<<<<<<< HEAD
   z4 = 100;
+=======
+>>>>>>> 29f743d71ab405fe2632ccd0667eab4738646ee7
   z5 = 100;
 
   addToZ(x: any, y: any) {
