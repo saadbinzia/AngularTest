@@ -6,21 +6,6 @@ name: Node.js CI
 on: [ push, pull_request]
 
 jobs:
-  createPullRequest:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          commit-message: done
-          branch: example-patches
-          delete-branch: true
-          labels: |
-            check
-            automated pr
-
-
   build:
 
     runs-on: ubuntu-latest
