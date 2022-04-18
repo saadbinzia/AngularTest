@@ -4,7 +4,7 @@ on:
     branches:
       - feature/*
 
-jobs:123
+jobs:
   create-pull-request:
     runs-on: ubuntu-latest
     steps:
