@@ -11,7 +11,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: pull-request
-        if: startsWith(github.ref, 'refs/heads/feature')
+        if: startsWith(github.event.commits[0].message, 'done')
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "main"
