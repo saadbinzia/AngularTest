@@ -10,6 +10,5 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: done
-          branch: dev
           labels: |
             automated pr
