@@ -1,10 +1,5 @@
 on:
-  push:
-    branches:
-      - main
-      - dev
-      - testPRBranch
-
+  push
 
 jobs:
   createPullRequest:
@@ -17,5 +12,4 @@ jobs:
           commit-message: done
           delete-branch: true
           labels: |
-            check
             automated pr
