@@ -13,7 +13,7 @@ jobs:
           commit-message: Update report
           committer: GitHub <noreply@github.com>
           signoff: false
-S          title: '[Example] Update report'
+          title: '[Example] Update report'
           body: |
             Update report
             - Updated with *today's* date
