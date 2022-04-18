@@ -5,16 +5,16 @@ on:
       - feature/*
 
 jobs:
-  action-pull-request:
+  create-pull-request:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Check out repository code
         uses: actions/checkout@v2
-      - name: Run the Action
+      - name: pull-request
         if: startsWith(github.ref, 'refs/heads/feature')
-        uses: devops-infra/action-pull-request@v0.4.2
+        uses: repo-sync/pull-request@v2
         with:
+          destination_branch: "main"
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          title: ${{ github.event.commits[0].message }}
-          label: automatic,feature
-          get_diff: true
+          pr_label: "feature, automated pr"
+          pr_title: "${{ github.event.commits[0].message }}"
