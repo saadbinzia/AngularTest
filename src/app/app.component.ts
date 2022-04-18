@@ -14,33 +14,33 @@ export class AppComponent {
   z4 = 100;
   z5 = 100;
 
-  addToZ(x: any, y: any) {
+  addToA(x: any, y: any) {
     return x + y + this.z;
   }
 
-  addToW(x: any, y: any) {
+  addToB(x: any, y: any) {
     return x + y + this.z;
   }
 
-  // addToW(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToW(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToW(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToW(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToW(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToW(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToW(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
+  addToC(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToD(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToE(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToF(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToG(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToH(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToI(x: any, y: any) {
+    return x + y + this.z;
+  }
 }
