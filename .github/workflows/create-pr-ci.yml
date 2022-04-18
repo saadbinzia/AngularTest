@@ -5,15 +5,20 @@ on:
       - feature/*
 
 jobs:
-  create-pull-request:
+  action-pull-request:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
+      - name: Checkout repository
         uses: actions/checkout@v2
-      - name: pull-request
-        uses: repo-sync/pull-request@v2
+      - name: Run the Action
+        if: startsWith(github.ref, 'refs/heads/feature')
+        uses: devops-infra/action-pull-request@v0.4.2
         with:
-          destination_branch: "main"
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          pr_label: "feature, automated pr"
-          pr_title: "Pulling ${{ github.ref }} into master"
+          title: ${{ github.event.commits[0].message }}
+          assignee: ${{ github.actor }}
+          label: automatic,feature
+          template: .github/PULL_REQUEST_TEMPLATE/FEATURE.md
+          old_string: "**Write you description here**"
+          new_string: ${{ github.event.commits[0].message }}
+          get_diff: true
