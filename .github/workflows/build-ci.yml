@@ -5,8 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
-
+  
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
