@@ -2,13 +2,17 @@
 name: ESLint
 
 on:
-  push:
-    branches: 
-      - main
-      - dev
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ main ]
+  label:
+    types:
+      - check
+
+  # push:
+  #   branches: 
+  #     - main
+  #     - dev
+  # pull_request:
+  #   # The branches below must be a subset of the branches above
+  #   branches: [ main ]
 
 jobs:
   eslint:
