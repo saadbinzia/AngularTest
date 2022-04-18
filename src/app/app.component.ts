@@ -11,7 +11,6 @@ export class AppComponent {
   z1 = 100;
   z2 = 100;
   z3 = 100;
-  z4 = 100;
   z5 = 100;
 
   addToA(x: any, y: any) {
