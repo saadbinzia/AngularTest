@@ -16,5 +16,4 @@ jobs:
           destination_branch: "main"
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "feature, automated pr"
-          pr_title: "pull request"
-          pr_body: ":crown: *An automated PR*"              
+          pr_title: "Pulling ${{ github.ref }} into master"
