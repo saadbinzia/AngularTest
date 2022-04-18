@@ -13,8 +13,8 @@ export class AppComponent {
     return x + y + this.z;
   }
 
-  addToW(x: any, y: any) {
-    return x + y + this.z;
-  }
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
 
 }
