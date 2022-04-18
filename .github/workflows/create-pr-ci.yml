@@ -11,9 +11,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: pull-request
+        if: startsWith(github.ref, 'refs/heads/feature')
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "main"
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "feature, automated pr"
-          pr_title: "Pulling ${{ github.ref }} into master"
+          pr_title: "${{ github.event.commits[0].message }}"
