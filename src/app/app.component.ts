@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'routing-app';
   z = 100;
+  // z = 100;
+  // z = 100;
+  // z = 100;
+  // z = 100;
+  // z = 100;
 
   addToZ(x: any, y: any) {
     return x + y + this.z;
@@ -17,4 +22,25 @@ export class AppComponent {
     return x + y + this.z;
   }
 
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToW(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
 }
