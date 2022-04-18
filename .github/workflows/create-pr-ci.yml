@@ -1,6 +1,5 @@
 on:
   push:
-  create:
 
 jobs:
   createPullRequest:
@@ -11,7 +10,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: done
-          branch: example-patches
           delete-branch: true
           labels: |
             check
