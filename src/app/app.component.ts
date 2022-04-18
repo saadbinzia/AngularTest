@@ -27,18 +27,18 @@ export class AppComponent {
   addToD(x: any, y: any) {
     return x + y + this.z;
   }
-  // addToE(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToF(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToG(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
-  // addToH(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
+  addToE(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToF(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToG(x: any, y: any) {
+    return x + y + this.z;
+  }
+  addToH(x: any, y: any) {
+    return x + y + this.z;
+  }
   addToI(x: any, y: any) {
     return x + y + this.z;
   }
