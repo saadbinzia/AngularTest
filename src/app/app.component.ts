@@ -13,9 +13,9 @@ export class AppComponent {
   z3 = 100;
   z5 = 100;
 
-  // addToA(x: any, y: any) {
-  //   return x + y + this.z;
-  // }
+  addToA(x: any, y: any) {
+    return x + y + this.z;
+  }
 
   addToB(x: any, y: any) {
     return x + y + this.z;
