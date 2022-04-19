@@ -17,22 +17,22 @@ export class AppComponent {
   //   return x + y + this.z;
   // }
 
-  addToB(x: any, y: any) {
-    return x + y + this.z;
-  }
+  // addToB(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
 
-  addToC(x: any, y: any) {
-    return x + y + this.z;
-  }
-  addToD(x: any, y: any) {
-    return x + y + this.z;
-  }
-  addToE(x: any, y: any) {
-    return x + y + this.z;
-  }
-  addToF(x: any, y: any) {
-    return x + y + this.z;
-  }
+  // addToC(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToD(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToE(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
+  // addToF(x: any, y: any) {
+  //   return x + y + this.z;
+  // }
   addToG(x: any, y: any) {
     return x + y + this.z;
   }
